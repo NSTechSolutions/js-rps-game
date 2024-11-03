@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rock paper Scissors Game v1.2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/utility-style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  </head>
+  <body>
+    <div class="wrapper flex-center">
+      <h1 id="main-heading">Rock Paper Scissors</h1>
+      <div class="game-scores-container">
+        <h2 class="game-scores__heading">Game Score</h2>
+        <div class="game-score_sub-container">
+          <div class="player-1-score flex">
+            <h3>Player 1</h3>
+            <span class="player1-score-span">0</span>
+          </div>
+          <div class="com-score flex">
+            <h3>Computer</h3>
+            <span class="com-score-span">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="game-container">
+        <div class="game-system flex">
+          <label for="player-one-choice" class="player-one-choice__label"
+            >Player Choice</label
+          >
+          <input
+            type="text"
+            name="player-one-choice"
+            class="player-one-choice"
+            placeholder="Enter Rock, Paper or Scissors"
+          />
+          <button id="btnStartGame">Play</button>
+        </div>
+        <div class="game-output">
+          <h3>Output</h3>
+          <div class="player-output">
+            <p>
+              <span class="output-label">Player :</span>
+              <span class="player-ans"></span>
+            </p>
+          </div>
+          <div class="computer-output">
+            <p>
+              <span class="output-label">Computer : </span>
+              <span class="computer-ans"></span>
+            </p>
+          </div>
+          <div class="game-winner">
+            <p class="winner-label">
+              <span class="winner"><strong class="outcome"></strong></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
+    <!-- Proudly made by the Ntokozo found at ntokozo@nstechsolutions.co.za -->
+    <!-- Fist 🤜 -->
+    <!--  -->
+  </body>
+</html>

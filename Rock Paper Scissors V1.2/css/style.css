@@ -1,0 +1,86 @@
+
+
+
+/* main styles*/
+body{
+	font-family: 'Play', sans-serif;
+	font-size: var(--S-N);
+}
+
+.wrapper{
+	flex-flow: column nowrap;
+	background-image: url("../images/img-1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: white;
+	position: relative;
+}
+
+/* Game Scores */
+.game-scores-container{
+	position: absolute;
+	top: 20px;
+	right: 5%;
+}
+
+.game-scores__heading{
+	font-weight: 700;
+}
+
+.game-score_sub-container{
+	padding: 0 10%;
+}
+
+.player-1-score,
+.com-score{
+	justify-content: space-between;
+}
+
+/* End of Game Scores */
+.game-container{
+	width: 35%;
+	padding: 20px;
+	background-color: var(--CONTAINER-BG-C);
+	border-radius: 10px;
+}
+
+.game-system{
+	justify-content: space-between;
+}
+
+.player-one-choice::placeholder{
+	color: wheat;
+	text-align: center;
+}
+
+button:active{
+	background-color: rgb(197, 70, 70);
+}
+
+/* Game Output */
+.game-output{
+	margin-top: var(--XXS-N);
+}
+
+.game-output h3{
+	font-size: var(--M-N);
+	color: var(--secondary-color);
+	font-weight: 700;
+}
+
+.player-output,
+.computer-output{
+	margin-bottom: 5px;
+}
+
+.output-label{
+	font-size: 1.8rem;
+	
+}
+
+.winner-label{
+	font-size: var(--M-N);
+	text-align: center;
+	color: var(--primary-color);
+}

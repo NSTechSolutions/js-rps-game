@@ -1,0 +1,235 @@
+/* Fonts  */
+/* Press Start -> regular 400 */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+/*Roboto -> light 300, light italic 300, medium 500 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap");
+
+/* Play -> Regular 400, Bold 700,  font-family: 'Play', sans-serif;*/
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+/* End of Fonts */
+
+/* Global Information */
+
+/* Resets */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Variebles*/
+:root {
+  /* General */
+  --CONTAINER-BG-C: rgba(0, 0, 0, 0.5);
+  --BOX-SHADOW: 10px 10px 5px 0px rgba(0, 0, 0, 54);
+  --TEXT-SHADOW: 4px 4px 3px black;
+
+  /* Color */
+  --DARK-COLOR-TR: hsla(0, 0%, 0%, 0.205);
+
+  /* Number Sizes */
+  --XXS-N: 0.5rem;
+  --XS-N: 1rem;
+  --SEMI-S-N: 1.25rem;
+  --S-N: 1.5rem;
+  --M-N: 2rem;
+  --L-N: 2.5rem;
+  --XL-N: 3rem;
+  --XXL-N: 3.5rem;
+
+  /* Font Sizes */
+  --FW-T: 100;
+  --FW-EX-L: 200;
+  --FW-L: 300;
+  --FW-N: 400;
+  --FW-M: 500;
+  --FW-SB: 600;
+  --FW-B: 700;
+  --FW-EX-B: 800;
+  --FW-H-B: 900;
+
+  /* Colors */
+  --primary-color: rgb(255, 238, 0);
+  --secondary-color: aqua;
+  --tertary-color: rgb(40, 180, 229);
+}
+
+/* Classes that are activeted by java script */
+.game-output {
+  display: none;
+}
+
+.game-output.active {
+  display: block;
+}
+/* End of Classes that are activeted by java script */
+
+/* Utilities Classes */
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* tag reset */
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.container-properties {
+  width: 100%;
+  max-width: 1440px;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100%;
+}
+
+section {
+  width: 90%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: -webkit-cover;
+  object-fit: -moz-cover;
+  object-fit: -ms-cover;
+  object-fit: cover;
+}
+
+button {
+  font-family: inherit;
+  padding: 5px 15px;
+}
+
+input {
+  font-family: inherit;
+  width: 50%;
+  padding: 5px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: white;
+}
+
+#icons_main {
+  font-size: 40px;
+  color: red;
+}
+
+/* End of Utilities Classes */
+
+/* tag reset */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/* tag reset */
+
+/* Anime-container  Column*/
+.columns img {
+  height: 100%;
+  display: block;
+}
+
+/* Typograpy */
+
+/* Headings */
+#main-heading {
+  font-family: "Press Start 2P", cursive;
+  font-size: var(--L-N);
+  font-weight: var(--FW-SB);
+  color: rgb(255, 238, 0);
+  text-align: center;
+  text-shadow: var(--TEXT-SHADOW);
+  margin-top: var(--XXL-N);
+  margin-bottom: var(--L-N);
+}
+
+h2 {
+  font-size: var(--M-N);
+  font-weight: var(--FW-L);
+  color: black;
+}
+
+h3 {
+  font-size: var(--S-N);
+  font-weight: var(--FW-EX-L);
+  /* color: rgba(182, 182, 182, 0.726); */
+  margin-bottom: var(--XXS-N);
+}
+
+h4 {
+  font-size: var(--SEMI-S-N);
+  /* color: rgb(182, 182, 182); */
+}
+
+/* Paragraphs */
+p {
+  /* font-size: var(--XS-N);
+	color: aqua; */
+}
+
+/* End of Typograpy */
+
+/* Navigation */
+
+/* .header-sub-container{
+	width: 90%;
+}
+
+nav a{
+	display: block;
+}
+
+nav a::after{
+	height: 4px;
+	width: 0;
+	content:"";
+	display: block;
+	background-color: rgb(255, 255, 143);
+	transition:all .5s;
+}
+
+
+.active::after{
+	height: 4px;
+	width: 100%;
+	content:"";
+	display: block;
+	background-color: rgb(247, 188, 5);
+}
+
+ nav a:hover::after{
+	width: 100%;
+}  */
+
+/* End of Navigation */
+
+/* General Styles */
+
+.bg-header {
+  font-size: var(--L-N);
+}
